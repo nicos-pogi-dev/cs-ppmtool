@@ -8,14 +8,12 @@ import io.countrysidesoftwares.ppmtool.repositories.ProjectRepository;
 
 @Service
 public class ProjectService {
-	
+
 	@Autowired
 	private ProjectRepository projectRepository;
 	
 	public Project saveOrUpdateProject(Project project) {
-		//TODO logic
-		
 		return projectRepository.save(project);
 	}
-
+	
 }
